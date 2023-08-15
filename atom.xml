@@ -6,7 +6,7 @@
   <link href="https://ggboy001.github.io/atom.xml" rel="self"/>
   
   <link href="https://ggboy001.github.io/"/>
-  <updated>2023-08-15T04:12:31.688Z</updated>
+  <updated>2023-08-15T15:45:21.974Z</updated>
   <id>https://ggboy001.github.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue2学习</title>
+    <link href="https://ggboy001.github.io/2023/08/15/vue2%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://ggboy001.github.io/2023/08/15/vue2%E5%AD%A6%E4%B9%A0/</id>
+    <published>2023-08-15T15:45:21.000Z</published>
+    <updated>2023-08-15T15:45:21.974Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>vue-router</title>
