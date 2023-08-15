@@ -1,17 +1,17 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>天天开心 | 天天开心</title><meta name="keywords" content="编程, 感悟, 生活, 前端"><meta name="author" content="Sun"><meta name="copyright" content="Sun"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="天天开心"><meta name="application-name" content="天天开心"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta name="description" content="build my blog时间:2小时+2小时+1.5小时+4.5小时+1小时+2+3 环境安装（基本都有） node  git  typora  github账号  创建仓库（注意命名，用户名+github.io）   科学上网  安装Hexo(高效的静态站点生成框架,基于node.js)   连接github和本地 git bash中生成密钥 github上注册密钥 修改_config.yml">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>vuex基础学习 | 天天开心</title><meta name="keywords" content="编程, 感悟, 生活, 前端"><meta name="author" content="Sun"><meta name="copyright" content="Sun"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="vuex基础学习"><meta name="application-name" content="vuex基础学习"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta name="description" content="vuex概念：专门在vue中实现集中式状态管理的一个vue插件，对多个组件的共享状态进行集中式管理的。 一个状态需要被共享就可以用vuex  看这张图（一定要细致，细致之后的学习会很舒服）  首先，在组件里面调用dispatch接口，传参（进行的操作，和什么数值操作） vuex的actions里面有一个键值对，是有关这个操作的函数（函数里面需要手动调用commit接口） 在mutations里面有">
 <meta property="og:type" content="article">
-<meta property="og:title" content="天天开心">
-<meta property="og:url" content="https://ggboy001.github.io/2023/06/16/firstblog_createblogrecord/index.html">
+<meta property="og:title" content="vuex基础学习">
+<meta property="og:url" content="https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="天天开心">
-<meta property="og:description" content="build my blog时间:2小时+2小时+1.5小时+4.5小时+1小时+2+3 环境安装（基本都有） node  git  typora  github账号  创建仓库（注意命名，用户名+github.io）   科学上网  安装Hexo(高效的静态站点生成框架,基于node.js)   连接github和本地 git bash中生成密钥 github上注册密钥 修改_config.yml">
+<meta property="og:description" content="vuex概念：专门在vue中实现集中式状态管理的一个vue插件，对多个组件的共享状态进行集中式管理的。 一个状态需要被共享就可以用vuex  看这张图（一定要细致，细致之后的学习会很舒服）  首先，在组件里面调用dispatch接口，传参（进行的操作，和什么数值操作） vuex的actions里面有一个键值对，是有关这个操作的函数（函数里面需要手动调用commit接口） 在mutations里面有">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ggboy001.github.io/img/default_cover.jpg">
-<meta property="article:published_time" content="2023-06-16T14:07:07.195Z">
-<meta property="article:modified_time" content="2023-06-19T05:13:34.090Z">
+<meta property="article:published_time" content="2023-08-15T03:02:31.000Z">
+<meta property="article:modified_time" content="2023-08-15T03:03:10.803Z">
 <meta property="article:author" content="Sun">
 <meta property="article:tag" content="编程, 感悟, 生活, 前端">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ggboy001.github.io/img/default_cover.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://ggboy001.github.io/2023/06/16/firstblog_createblogrecord/"><link rel="preconnect" href="//npm.elemecdn.com"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://ggboy001.github.io/img/default_cover.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/"><link rel="preconnect" href="//npm.elemecdn.com"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://npm.elemecdn.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/@fancyapps/ui@4.0.31/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   friends_vue_info: undefined,
   navMusic: true,
@@ -51,12 +51,12 @@
   islazyload: true,
   isAnchor: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '天天开心',
+  title: 'vuex基础学习',
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-06-19 13:13:34'
+  postUpdate: '2023-08-15 11:03:10'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -179,156 +179,76 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="web_box"><div id="web_container"><div id="menu-mask"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button" tabindex="-1"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://blog.anheyu.com/" title="博客" target="_blank"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" href="https://image.anheyu.com/" title="安知鱼图床" target="_blank"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/"><div class="title">天天开心</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:17px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" style="display: flex"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="darkmode_navswitch"><a class="darkmode_switchbutton" type="button" href="javascript:void(0);" title="浅色和深色模式转换" onclick="anzhiyu.switchDarkMode()"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke" style="font-size: 1.3rem"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="article-meta tags"></span></div></div><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-16T14:07:07.195Z" title="发表于 2023-06-16 22:07:07">2023-06-16</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-19T05:13:34.090Z" title="更新于 2023-06-19 13:13:34">2023-06-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">1.6k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为西安"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>西安</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/default_cover.jpg"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="build-my-blog"><a href="#build-my-blog" class="headerlink" title="build my blog"></a>build my blog</h2><p>时间:2小时+2小时+1.5小时+4.5小时+1小时+2+3</p>
-<h3 id="环境安装（基本都有）"><a href="#环境安装（基本都有）" class="headerlink" title="环境安装（基本都有）"></a>环境安装（基本都有）</h3><ul>
-<li><p>node</p>
-</li>
-<li><p>git</p>
-</li>
-<li><p>typora</p>
-</li>
-<li><p>github账号</p>
-<blockquote>
-<p>创建仓库（注意命名，用户名+github.io）</p>
-</blockquote>
-</li>
-<li><p>科学上网</p>
-</li>
-<li><p>安装Hexo(高效的静态站点生成框架,基于node.js)</p>
-<!--hexo init出现了问题,应该是因为hexo init时文件里面不是空的.删除一下就好了--></li>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="web_box"><div id="web_container"><div id="menu-mask"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button" tabindex="-1"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://blog.anheyu.com/" title="博客" target="_blank"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" href="https://image.anheyu.com/" title="安知鱼图床" target="_blank"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/"><div class="title">天天开心</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-31px;"><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:17px;"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" style="display: flex"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="darkmode_navswitch"><a class="darkmode_switchbutton" type="button" href="javascript:void(0);" title="浅色和深色模式转换" onclick="anzhiyu.switchDarkMode()"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke" style="font-size: 1.3rem"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="article-meta tags"></span></div></div><h1 class="post-title">vuex基础学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-15T03:02:31.000Z" title="发表于 2023-08-15 11:02:31">2023-08-15</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-15T03:03:10.803Z" title="更新于 2023-08-15 11:03:10">2023-08-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">1k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为西安"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>西安</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/default_cover.jpg"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="vuex"><a href="#vuex" class="headerlink" title="vuex"></a>vuex</h2><p>概念：专门在vue中实现集中式状态管理的一个vue插件，对多个组件的共享状态进行集中式管理的。</p>
+<p>一个状态需要被共享就可以用vuex</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20230731105920141.png" alt="image-20230731105920141"></p>
+<p>看这张图（一定要细致，细致之后的学习会很舒服）</p>
+<ol>
+<li>首先，在组件里面调用dispatch接口，传参（进行的操作，和什么数值操作）</li>
+<li>vuex的actions里面有一个键值对，是有关这个操作的函数（函数里面需要手动调用commit接口）</li>
+<li>在mutations里面有个键值对是用来根据要做的操作修改state中的值</li>
+<li>最终渲染到页面</li>
+</ol>
+<p>actions真正的作用是如果要进行的操作需要向服务器端获取数值，就可以在这个actions中发送ajax请求获取这个数值</p>
+<p>若知道操作和数值，可以直接在组件调用commit接口去直接到达mutations</p>
+<p>图中没有展现的是actions，mutations，state都是需要store进行管理的，也就是调用接口需要store.dispatch</p>
+<h4 id="vuex的初始配置"><a href="#vuex的初始配置" class="headerlink" title="vuex的初始配置"></a>vuex的初始配置</h4><ol>
+<li>安装插件</li>
+<li>Vue.use（只有使用了，vue传入store配置vue才认）</li>
+<li>创建store（需要传入配置项）</li>
+<li>vm传入store配置项</li>
+</ol>
+<h4 id="vuex的使用"><a href="#vuex的使用" class="headerlink" title="vuex的使用"></a>vuex的使用</h4><ul>
+<li>把共享数据放入state中</li>
+<li>插值语法可直接访问到$store，可以拿到state中的值</li>
+<li>dispatch中第一个参数是进行的操作，写在组件的函数中</li>
+<li>commit中第一个参数是大写的操作，显得牛逼，写在actions中的操作函数中</li>
+<li>小写的操作函数中第一个参数是context，大写的操作函数第一个参数是state</li>
 </ul>
-<h3 id="连接github和本地"><a href="#连接github和本地" class="headerlink" title="连接github和本地"></a>连接github和本地</h3><ul>
-<li>git bash中生成密钥</li>
-<li>github上注册密钥</li>
-<li>修改_config.yml文件(博客的配置文件,可以修改与博客相关的各种信息)（修改一下deploy部署这个page就可以实现部署到github page上，就可以实现别人访问到我的网页）</li>
-<li>安装自动部署发布工具hexo-deployer-git</li>
-</ul>
-<h3 id="网址的简单美化"><a href="#网址的简单美化" class="headerlink" title="网址的简单美化"></a>网址的简单美化</h3><p>先试一下hexo的主题</p>
-<p>但出现了一个问题：在clone主题的时候</p>
-<p><code>Cloning into &#39;hexo-theme-matery&#39;... fatal: unable to access &#39;https://github.com/blinkfox/hexo-theme-matery.git/&#39;:iled to connect to github.com port 443: Timed out</code></p>
-<p>方法：更改代理端口（肯定要开代理的）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="网页"><a href="#网页" class="headerlink" title="网页"></a>网页</h3><p>网页调整</p>
+<p>再度完善，写的更规范些：</p>
 <ul>
-<li><p>修改原始默认主题为hexo-theme-matery接着更改_config.yml中的相关配置</p>
-</li>
-<li><p>创建几个必须的页面(categories,tags,about)</p>
-</li>
-<li><p>配置菜单导航(基本上和配置有关的,优先考虑在_config.yml中添加)(修改配置需要注意缩进的)(配置不了,不知道什么原因)</p>
-<blockquote>
-<p>竟然有个默认配置可以修改提交代码到哪一个分支，main(卡这里好一会)</p>
-</blockquote>
-</li>
+<li>有业务逻辑，把业务逻辑放在actions中</li>
+<li>无业务逻辑，且已知数值，直接在组件的方法中调用commit接口</li>
 </ul>
-<p>网页进一步美化</p>
-<p>挑一挑可用的主题</p>
-<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><ul>
-<li><p>域名（域名备案）</p>
-</li>
-<li><p>图床</p>
-</li>
-<li><p>服务器</p>
-</li>
-</ul>
-<p> <a target="_blank" rel="noopener" href="https://zblogs.top/how-to-build-a-personal-blog-site/">详细了解</a></p>
-<p>note:又拍云cdn之后可以用于提高网站加载速度</p>
-<h2 id="拓展了解"><a href="#拓展了解" class="headerlink" title="拓展了解"></a>拓展了解</h2><h3 id="静态博客和动态博客"><a href="#静态博客和动态博客" class="headerlink" title="静态博客和动态博客"></a>静态博客和动态博客</h3><ul>
-<li><p>静态博客</p>
-<blockquote>
+<p>另外记一个store中的配置项，getters，和计算属性类似，也是靠return拿到值，（函数参数是state）</p>
+<h4 id="Vuex精简代码"><a href="#Vuex精简代码" class="headerlink" title="Vuex精简代码"></a>Vuex精简代码</h4><ol>
+<li>借助vuex中的mapState，mapGetters去映射state，getters，</li>
+</ol>
 <ul>
-<li>html代码生成后,页面的内容和显示效果就基本不会变化</li>
-<li>不会有太多用户交互(本来就是给自己写文章的,也不需要有太多交互效果)</li>
-<li>就几个页面,要求不高,github page或低配服务器都可以</li>
-<li>纯代码小白不推荐使用hexo+github创建,较麻烦,且耗时</li>
-</ul>
-</blockquote>
+<li><p>传入对象（改名用这个，注意值为字符串）</p>
 </li>
-<li><p>动态博客</p>
+<li><p>传入数组（简写用这个）<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20230731220702474.png" alt="image-20230731220702474"></p>
 </li>
 </ul>
-<blockquote>
+<ol start="2">
+<li>借助vuex中的mapMutations，mapActions去生成对应的方法，前者方法中会调用commit与mutations对话，后者方法中会调用dispatch与actions对话</li>
+</ol>
+<p>传入对象{函数名：’操作大写’}</p>
+<p>备注：需要注意模板中绑定事件需要传入要与什么数值操作，否则就是传入event</p>
+<h4 id="Vuex模块化-命名空间"><a href="#Vuex模块化-命名空间" class="headerlink" title="Vuex模块化+命名空间"></a>Vuex模块化+命名空间</h4><p>Q:要管理的共享数据会非常多，导致mutations等等配置特别臃肿，且不适合维护，那应该怎么办呐？</p>
+<p>A:将这些配置按与实现什么业务相关进行分类</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20230731231001763.png" alt="image-20230731231001763"></p>
+<ol>
+<li>模块化之后怎么在组件中简写形式拿到数据呐？</li>
+</ol>
+<p>就需要用到namespaced配置并且在四个map…中的第一个参数指定是模块化之后的哪一个</p>
+<p>总结：(学了将近1小时,又看视频又敲代码,就学这么点东西,就是因为创建正确的联系,如果在听的时候不那么注重细节,而把重点放在老师要讲的联系上,会不会更好)</p>
 <ul>
-<li>可以随时间,数据库操作的结果的改变而变化</li>
-<li>可以设计用户交互,着重用户体验感,这也就不是个人博客了,更偏向于用户使用的网站</li>
-<li>服务器根据个人需求</li>
-<li>可用wordpress等创建,简单易上手</li>
+<li>在不同的业务逻辑下将store模块化</li>
+<li>开启namespaced并且map…中第一个参数指定是哪一个模块</li>
 </ul>
-</blockquote>
-<p>我感觉写博客可以帮助我更好的表达自己,尤其是要站在别人的角度.自己经常性的就是仅仅让自己懂,但是别人并不理解.</p>
-<p>输入我想输入的,输出我可以输出的.</p>
-<p>明天: 3小时<br>更改为butterfly主题</p>
-<p>找了一个小时10分钟，觉得还是不需要花时间去找了。嗯就这样。先用着这个基于butterfly的anzhiyu主题吧。然后再根据文档找找自己需要的功能。</p>
-<p>美化根据文档其实就是时间问题.现在先大致这样.等之后有时间可以再更改</p>
-<h4 id="questions："><a href="#questions：" class="headerlink" title="questions："></a>questions：</h4><ul>
-<li><p>nav没有显示出来</p>
-</li>
-<li><p>文章封面设置显示不出来并且报错(要注意修改的配置在什么文件)</p>
-</li>
-<li><p>footer上班摸鱼去不了</p>
-</li>
-<li><p>线上输入域名打开排版很乱，刚开始以为是没有CDN或者github pages的问题，或者是主题配置的问题，或者是控制台报错的问题，在这卡了有两天时间，但没有浪费，（就着问题我优化了双线部署，也搭建了图床，也了解到控制台一些报错信息的原因。）。最后解决问题的方式竟然是偶尔打开一个博主的创建博客的教程，让我看到了hexo clean，尝试一下，然后就可以了。这么说，排错有时候真的很靠运气啊。</p>
-</li>
-</ul>
-<blockquote>
-<p><code>  hexo clean</code></p>
-<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p>
-<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-</blockquote>
-<p>之后的兴趣拓展点:(当然也要注意时间四象限)</p>
-<ul>
-<li>主题拓展找找自己喜欢的</li>
-<li>图床</li>
-<li>加速网站访问速度,cdn(Content Delivery Network,,将内容缓存在终端用户附近,加速了网站的访问——用户与内容之间的物理距离缩短，用户的等待时间也得以缩短)</li>
-</ul>
-<h3 id="写博客可以写的属于自己的结构"><a href="#写博客可以写的属于自己的结构" class="headerlink" title="写博客可以写的属于自己的结构"></a>写博客可以写的属于自己的结构</h3><ul>
-<li>首先目的,知识点的用处以及为什么</li>
-<li>其次不依附所写内容的灵感感悟</li>
-<li>最后是拓展点</li>
-</ul>
-<p>Material Design</p>
-<p>注重卡片式设计、纸张的模拟、使用了强烈对比色彩的设计风格</p>
-<p>tips：</p>
-<p>写代码块的语法<code>         代码</code></p>
-<p>使用hexo s 启动本地服务后，如果修改了配置或者文章内容，需要停止服务后重新启动才能生效。这样，在调试或写文章阶段非常不方便，可以使用下面命令，以debug的方式启动，这样每次修改后就无需重启服务了。</p>
-<blockquote>
-<p>$ hexo s –debug（。。。不是我想要的功能，这就是博客的不严谨的地方，但应该有些用处，之后了解一下）</p>
-</blockquote>
-<p>重要的\觉得自己忘了有损失的知识点记录下来,其余的就忘记那也改变不了.</p>
-<h2 id="优化blog网站"><a href="#优化blog网站" class="headerlink" title="优化blog网站"></a>优化blog网站</h2><h3 id="部署github仓库到vercel"><a href="#部署github仓库到vercel" class="headerlink" title="部署github仓库到vercel"></a>部署github仓库到vercel</h3><ul>
-<li>首先就是github登录到vercel</li>
-<li>然后import仓库就行</li>
-<li>再稍微调节一下设置参数</li>
-<li>所以我的博客现在是双线部署</li>
-</ul>
-<p>双线部署的优点：</p>
-<ul>
-<li>避免一个出现故障就访问不了</li>
-<li>访问请求分发到不同的服务器，提高博客整体性能</li>
-</ul>
-<p>github pages是不支持 实时部署的，</p>
-<p>vercel支持</p>
-<p>问题： </p>
-<p><code> net::ERR_BLOCKED_BY_CLIENT</code></p>
-<p>浏览器防广告的插件的问题</p>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/image-20230619002418850.png" alt="image-20230619002418850"></p>
-<h3 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h3><p>github+typora+jsdeliver实现</p>
-<p>jsdelivr是首个打通国内与海外的免费CDN服务</p>
-<ul>
-<li>github创建放图片的仓库</li>
-<li>github创建token用于picgo图床配置填写以可以向仓库写入图片</li>
-<li>填写picgo图床配置注意按格式填写,自定义域名用到jsdelivr</li>
-</ul>
-<p>拓展:</p>
-<ul>
-<li><p>之后可以详细了解下jsdelivr还可以做什么</p>
-</li>
-<li><p>hexo的指令</p>
-</li>
-</ul>
-</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://ggboy001.github.io/2023/06/16/firstblog_createblogrecord/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=天天开心&amp;url=https://ggboy001.github.io/2023/06/16/firstblog_createblogrecord/&amp;pic=/img/default_cover.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"></div></div></div><div class="post_share"><div class="social-share" data-image="/img/default_cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://ggboy001.github.io/2023/06/16/firstblog_createblogrecord/">原创</a><a class="post-copyright-title"><span>天天开心</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="https://Ggboy001.github.io">Sun</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="https://ggboy001.github.io/2023/06/16/firstblog_createblogrecord/">https://ggboy001.github.io/2023/06/16/firstblog_createblogrecord/</a></span><span class="copy-button" onclick="rm.copyPageUrl('https://ggboy001.github.io/2023/06/16/firstblog_createblogrecord/)'"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://Ggboy001.github.io" target="_blank">天天开心</a>！</span></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/"><img class="next-cover" src="/img/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">vuex基础学习</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author-info-top"> <div class="card-info-avatar"></div></div><div class="author-info__sayhi" id="author-info__sayhi"></div><h1 class="author-info__name">Sun</h1><div class="author-info__description">真不错</div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/about/&quot;)"><span class="banner-button-text">了解更多</span><i class="anzhiyufont anzhiyu-icon-arrow-circle-right" style="font-size: 1.5rem"></i></a></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#build-my-blog"><span class="toc-number">1.</span> <span class="toc-text">build my blog</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%EF%BC%88%E5%9F%BA%E6%9C%AC%E9%83%BD%E6%9C%89%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">环境安装（基本都有）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5github%E5%92%8C%E6%9C%AC%E5%9C%B0"><span class="toc-number">1.2.</span> <span class="toc-text">连接github和本地</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E5%9D%80%E7%9A%84%E7%AE%80%E5%8D%95%E7%BE%8E%E5%8C%96"><span class="toc-number">1.3.</span> <span class="toc-text">网址的简单美化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5"><span class="toc-number">1.4.</span> <span class="toc-text">网页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96"><span class="toc-number">1.5.</span> <span class="toc-text">优化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%93%E5%B1%95%E4%BA%86%E8%A7%A3"><span class="toc-number">2.</span> <span class="toc-text">拓展了解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%92%8C%E5%8A%A8%E6%80%81%E5%8D%9A%E5%AE%A2"><span class="toc-number">2.1.</span> <span class="toc-text">静态博客和动态博客</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#questions%EF%BC%9A"><span class="toc-number">2.1.1.</span> <span class="toc-text">questions：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%8D%9A%E5%AE%A2%E5%8F%AF%E4%BB%A5%E5%86%99%E7%9A%84%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BB%93%E6%9E%84"><span class="toc-number">2.2.</span> <span class="toc-text">写博客可以写的属于自己的结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E5%8C%96blog%E7%BD%91%E7%AB%99"><span class="toc-number">3.</span> <span class="toc-text">优化blog网站</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2github%E4%BB%93%E5%BA%93%E5%88%B0vercel"><span class="toc-number">3.1.</span> <span class="toc-text">部署github仓库到vercel</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A"><span class="toc-number">3.2.</span> <span class="toc-text">图床</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="vuex基础学习"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vuex基础学习"/></a><div class="content"><a class="title" href="/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="vuex基础学习">vuex基础学习</a><time datetime="2023-08-15T03:02:31.000Z" title="发表于 2023-08-15 11:02:31">2023-08-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/16/firstblog_createblogrecord/" title="无题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2023/06/16/firstblog_createblogrecord/" title="无题">无题</a><time datetime="2023-06-16T14:07:07.195Z" title="发表于 2023-06-16 22:07:07">2023-06-16</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:anzhiyu-c@qq.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><img class="footer_mini_logo" title="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="十年之约" target="_blank" href="https://www.foreverblog.cn/">十年之约</a><a class="footer-item" title="开往" target="_blank" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="文档" target="_blank" href="/docs/">文档</a><a class="footer-item" title="源码" target="_blank" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">源码</a><a class="footer-item" title="更新日志" target="_blank" href="/update/">更新日志</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" target="_blank" href="/essay/">即刻短文</a><a class="footer-item" title="友链文章" target="_blank" href="/fcircle/">友链文章</a><a class="footer-item" title="留言板" target="_blank" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" target="_blank" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" target="_blank" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" target="_blank" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><div class="copyright">&copy;2023 By Sun</div><div id="workboard"><img class="workSituationImg boardsign" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div></div></footer></div></div></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/2fa7e7c9cf0efef550c49f60b286982.jpg"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
+<ol start="2">
+<li>若不采用简写形式呐?(也就是自己去从state,getters中拿值,自己调用dispatch,commit)</li>
+</ol>
+<p>拿state中的值时需要指定是哪一个模块</p>
+<p>拿getters中的值时不用指定哪一个模块,用getters[countAbout&#x2F;firstname]</p>
+<p>dispatch和commit传递第一个参数时都要用在操作名前面拼接’模块&#x2F;‘</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20230801115953040.png" alt="image-20230801115953040"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20230801145617700.png" alt="image-20230801145617700"></p>
+<p>vuex的规范:</p>
+<p>src写一个store文件,里面根据业务区分出来不同的store,然后暴露出去,在index中引入并写入modules中</p>
+<p>真的容易忘,虽然一天学完了,但是过了几天之后发现真的生疏,非常多的之前建立的联系都i想不起来了,很耗费脑子.看来还是要尽可能快的学完,然后重在做项目实践.</p>
+</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=vuex基础学习&amp;url=https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/&amp;pic=/img/default_cover.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"></div></div></div><div class="post_share"><div class="social-share" data-image="/img/default_cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://npm.elemecdn.com/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div></div><div class="post-copyright"><i class="anzhiyufont anzhiyu-icon-copyright"></i><div class="post-copyright__author"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">原创</a><a class="post-copyright-title"><span>vuex基础学习</span></a></div><div class="post-copyright-info-box"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"></span><a class="link" href="https://Ggboy001.github.io">Sun</a></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a class="link" href="https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/</a></span><span class="copy-button" onclick="rm.copyPageUrl('https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/)'"><i class="anzhiyufont anzhiyu-icon-copy"></i></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://Ggboy001.github.io" target="_blank">天天开心</a>！</span></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2023/06/16/firstblog_createblogrecord/"><img class="prev-cover" src="/img/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author-info-top"> <div class="card-info-avatar"></div></div><div class="author-info__sayhi" id="author-info__sayhi"></div><h1 class="author-info__name">Sun</h1><div class="author-info__description">真不错</div><div class="banner-button-group"><a class="banner-button" onclick="pjax.loadUrl(&quot;/about/&quot;)"><span class="banner-button-text">了解更多</span><i class="anzhiyufont anzhiyu-icon-arrow-circle-right" style="font-size: 1.5rem"></i></a></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#vuex"><span class="toc-number">1.</span> <span class="toc-text">vuex</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#vuex%E7%9A%84%E5%88%9D%E5%A7%8B%E9%85%8D%E7%BD%AE"><span class="toc-number">1.0.1.</span> <span class="toc-text">vuex的初始配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#vuex%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.0.2.</span> <span class="toc-text">vuex的使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vuex%E7%B2%BE%E7%AE%80%E4%BB%A3%E7%A0%81"><span class="toc-number">1.0.3.</span> <span class="toc-text">Vuex精简代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Vuex%E6%A8%A1%E5%9D%97%E5%8C%96-%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4"><span class="toc-number">1.0.4.</span> <span class="toc-text">Vuex模块化+命名空间</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="vuex基础学习"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vuex基础学习"/></a><div class="content"><a class="title" href="/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" title="vuex基础学习">vuex基础学习</a><time datetime="2023-08-15T03:02:31.000Z" title="发表于 2023-08-15 11:02:31">2023-08-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/16/firstblog_createblogrecord/" title="无题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2023/06/16/firstblog_createblogrecord/" title="无题">无题</a><time datetime="2023-06-16T14:07:07.195Z" title="发表于 2023-06-16 22:07:07">2023-06-16</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:anzhiyu-c@qq.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><img class="footer_mini_logo" title="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="十年之约" target="_blank" href="https://www.foreverblog.cn/">十年之约</a><a class="footer-item" title="开往" target="_blank" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="文档" target="_blank" href="/docs/">文档</a><a class="footer-item" title="源码" target="_blank" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">源码</a><a class="footer-item" title="更新日志" target="_blank" href="/update/">更新日志</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" target="_blank" href="/essay/">即刻短文</a><a class="footer-item" title="友链文章" target="_blank" href="/fcircle/">友链文章</a><a class="footer-item" title="留言板" target="_blank" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" target="_blank" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" target="_blank" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" target="_blank" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><div class="copyright">&copy;2023 By Sun</div><div id="workboard"><img class="workSituationImg boardsign" src="https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div></div></footer></div></div></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/2fa7e7c9cf0efef550c49f60b286982.jpg"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>const loadingPercentage = document.getElementById("loading-percentage");
 let loadingPercentageTimer = setInterval(function() {
   var progressBar = document.querySelector(".pace-progress");
   if (!progressBar) return

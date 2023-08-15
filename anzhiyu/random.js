@@ -1,4 +1,4 @@
-var posts=["2023/06/16/firstblog_createblogrecord/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};var friend_link_list=[];
+var posts=["2023/06/16/firstblog_createblogrecord/","2023/08/15/vuex基础学习/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};var friend_link_list=[];
     var refreshNum = 1;
     function addFriendLinksInFooter() {
       var footerRandomFriendsBtn = document.getElementById("footer-random-friends-btn");
