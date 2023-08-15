@@ -1,3 +1,4 @@
+https://ggboy001.github.io/2023/08/16/vue2%E5%AD%A6%E4%B9%A0-%E4%B8%8B%EF%BC%89/
 https://ggboy001.github.io/2023/08/15/vue2%E5%AD%A6%E4%B9%A0/
 https://ggboy001.github.io/2023/08/15/vue-router/
 https://ggboy001.github.io/2023/08/15/vuex%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/

@@ -6,7 +6,7 @@
   <link href="https://ggboy001.github.io/atom.xml" rel="self"/>
   
   <link href="https://ggboy001.github.io/"/>
-  <updated>2023-08-15T16:07:37.981Z</updated>
+  <updated>2023-08-15T16:09:24.908Z</updated>
   <id>https://ggboy001.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue2学习(下）</title>
+    <link href="https://ggboy001.github.io/2023/08/16/vue2%E5%AD%A6%E4%B9%A0-%E4%B8%8B%EF%BC%89/"/>
+    <id>https://ggboy001.github.io/2023/08/16/vue2%E5%AD%A6%E4%B9%A0-%E4%B8%8B%EF%BC%89/</id>
+    <published>2023-08-15T16:09:13.000Z</published>
+    <updated>2023-08-15T16:09:24.908Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="vue学习5"><a href="#vue学习5" class="headerlink" title="vue学习5"></a>vue学习5</h2><h3 id="render函数"><a href="#render函数" class="headerlink" title="render函数"></a>render函数</h3><p>原因:vue.runtime…js没有模板解析器,所以不能使用template配置项,需要使用render函数接收到的createElement函数去指定具体内容.</p><p>标签<template>是有专门的解析器的</p><h3 id="修改默认配置-先了解"><a href="#修改默认配置-先了解" class="headerlink" title="修改默认配置(先了解)"></a>修改默认配置(先了解)</h3><p>可能会有一些特殊需求调整webpack,就需要创建vue.config.js去完成webpack的特殊配置,并且会被脚手架自动加载.</p><p>先知道一个,就是关闭脚手架的语法检查,lintOnSave:false</p><h3 id="新的学习内容"><a href="#新的学习内容" class="headerlink" title="新的学习内容"></a>新的学习内容</h3><h3 id="ref属性（组件间通信会用到）"><a href="#ref属性（组件间通信会用到）" class="headerlink" title="ref属性（组件间通信会用到）"></a>ref属性（组件间通信会用到）</h3><p>给标签绑定ref属性，可以用于获取该DOM元素</p><p>特别的：给组件加ref属性，也是可以获取该组件实例</p><p> this.$refs.××</p><h3 id="props配置"><a href="#props配置" class="headerlink" title="props配置"></a>props配置</h3><p>问题引入:结构是一样的,仅仅就是数据不一样,这个时候,难道就不能使用这个组件了吗?</p><p>传的时候,就是在组件上写上参数(名字当然要和props里面一样)</p><p>三种表示方式</p><p>props:[‘name’,’age’,’sex’] &#x2F;&#x2F;简单接收</p><p>props:</p><p>{</p><p>name:String,</p><p>age:Number</p><p>}</p><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308151950372.png" alt="image-20230529202757981"></p><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308151950373.png" alt="image-20230529203411427"></p><p>优先级是props大于data的,传过来的值优先放到组件实例vc上</p><h3 id="mixin配置-混入"><a href="#mixin配置-混入" class="headerlink" title="mixin配置(混入)"></a>mixin配置(混入)</h3><p>可以把多个组件共用的配置提取成一个混入对象(可以单独写成一个js文件,当然要暴露)</p><p>混入的语法:</p><p>局部混入   mixins:[要混入的名字]</p><p>全局混入  Vue.mixin(  )</p><p>之前看文章说这个用的多了好像很容易造成项目很混乱的结构。</p><h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><p>使用就是在Vue.use(插件名)</p><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308151950374.png" alt="image-20230529210814817"></p><h2 id="vue学习6"><a href="#vue学习6" class="headerlink" title="vue学习6"></a>vue学习6</h2><p>学习时长：</p><h3 id="组件自定义事件（子组件向父组件传数据）"><a href="#组件自定义事件（子组件向父组件传数据）" class="headerlink" title="组件自定义事件（子组件向父组件传数据）"></a>组件自定义事件（子组件向父组件传数据）</h3><p>是一种组件间通信的方式</p><p>引入知识点：</p><p>子给父组件传递数据：父先给子一个函数，子用props接收并将子组件值传进去</p><p>使用场景：A是父组件，B是子组件，B想给A传数据，那么就要在A中给B绑定自定义事件（事件的回调在A中）</p><p>通过父组件给子组件绑定一个自定义事件实现：子给父传递数据</p><p>需要使用$emit（’事件名’,可以传多个参数）方法去触发组件实例上你所定义的自定义事件</p><p>使用ref实现，会用到$on或$once(‘自定义事件名字’，回调函数)这个方法</p><p>注意：</p><p>就是给组件注意是组件不是标签添加click这种事件，vue也会认为这是自定义的时间名，所以也要按自定义事件去调用。除非比如用@click.native&#x3D;””</p><h3 id="自定义事件的解绑"><a href="#自定义事件的解绑" class="headerlink" title="自定义事件的解绑"></a>自定义事件的解绑</h3><p>该组件实例上的$off(‘事件名’or[]or什么也不写) </p><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308151950375.png" alt="image-20230530211606220"></p><h3 id="全局事件总线（很厉害的组件间通信方式）-用到特别多"><a href="#全局事件总线（很厉害的组件间通信方式）-用到特别多" class="headerlink" title="全局事件总线（很厉害的组件间通信方式）(用到特别多)"></a>全局事件总线（很厉害的组件间通信方式）(用到特别多)</h3><p>可以实现任意组件间的通信(牛啊)</p><p>嗯？现在发现还是vuex用的比较多哎。</p><p>思路:</p><ul><li><p>在Vue的构造函数上绑定一个 $bus属性(值是vm实例对象)</p></li><li><p>然后子组件就可以用这个$bus的$on和$off,并且 相互之间都可以访问到组件上定义的事件得以实现组件间通信</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308151950376.png" alt="image-20230531164217742"></p><h3 id="消息订阅与发布-还是用vue自有的全局事件总线好些"><a href="#消息订阅与发布-还是用vue自有的全局事件总线好些" class="headerlink" title="消息订阅与发布(还是用vue自有的全局事件总线好些)"></a>消息订阅与发布(还是用vue自有的全局事件总线好些)</h3><p>实现任意组件间通信</p><p>一个库:pubsub.js可以实现在任何框架里面进行消息订阅与发布</p><p>这个箭头函数在vue里面用的是淋漓尽致哈,要想this指向的实例,就用箭头函数不管是引入的库中的回调函数,还是就window管理的一些函数,还是普通的vue中的一些回调.所以要长个心眼就是有函数中用到了this,你就需要想清楚这个this指向的谁.</p><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308151950377.png" alt="image-20230531170333209"></p><p>用法和全局事件总线类似,图片中的细节,pubid,类似定时器取消订阅需要接收一下这个消息id,还有就是订阅消息的回调函数接收到的第一个参数是消息名</p><h3 id="nextTick"><a href="#nextTick" class="headerlink" title="nextTick"></a>nextTick</h3><p>this.$nextTick(回调函数)</p><p>使用:当改变数据后,要基于更新后的新DOM进行某些操作(获取焦点).是已经更新的DOM</p><p>vue不是你想当然的当你一改变一个数据,就重新解析模板,而是当包含这个修改数据的指令的函数执行完之后,再渲染数据.</p><p>异步定时器任务也可以不写毫秒数(当然看 需求,我这里只是解决之前的一个问题也就是通过调毫秒数以等待渲染结束,问题可能不是在于这个毫秒数),因为本身同步任务结束后才能执行异步任务,对没错和那个nextTick同理的</p><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308151950378.png" alt="image-20230531173805124"></p><h3 id="vue中的过度与动画（了解我觉得我暂时用不上）"><a href="#vue中的过度与动画（了解我觉得我暂时用不上）" class="headerlink" title="vue中的过度与动画（了解我觉得我暂时用不上）"></a>vue中的过度与动画（了解我觉得我暂时用不上）</h3><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308151950379.png" alt="image-20230531183735505"></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h3 id="利用脚手架解决ajax跨域问题"><a href="#利用脚手架解决ajax跨域问题" class="headerlink" title="利用脚手架解决ajax跨域问题"></a>利用脚手架解决ajax跨域问题</h3><p>1.后端人员cors配置一些响应头</p><p>2.jsonp 就是借助script src属性，还需要前后端人员双向奔赴 只能解决get跨域（丢弃了）</p><p>3.脚手架开启代理服务器（发送请求到代理服务器上，由代理服务器发送请求）</p><ul><li><p>用devServer配置，缺点只能配置一个代理服务器，2，本地如果有这个文件就获取本地静态资源</p></li><li><p>还可以用另一种devServer</p></li></ul><blockquote><p>前缀，想走代理，就可以请求的时候加个前缀，target属性是代理服务器的url（服务器不开你是无法从上面获取资源的。）</p></blockquote><h3 id="默认插槽"><a href="#默认插槽" class="headerlink" title="默认插槽"></a>默认插槽</h3><p>组件使用时里面有组件体内容，那该放到组件的什么位置呐，放到slot（标签中可以放默认值，如果没有传东西，就默认显示默认值）这个标签占用的位置</p><h3 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h3><p>slot属性，name属性</p><p>v-slot：属性仅仅用于template</p><h3 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h3><p>scope和slot-scope用于接收插槽传过来的数据</p><p>总结一下：</p><p>学习过程中敲代码敲的少了，比较多的时间花在了记笔记上</p><p>学习的周期拉的长了，导致有的自己记的知识点自己都有点不太理解，之后一个技术的学习要快一些，要不然就复习的频繁一些。</p><p>还是要以实践为主，就应该比较快速的学习完，然后做一个有关vue2的项目。</p><p>进步一点点。</p><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202308152024173.png" alt="Vue"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;vue学习5&quot;&gt;&lt;a href=&quot;#vue学习5&quot; class=&quot;headerlink&quot; title=&quot;vue学习5&quot;&gt;&lt;/a&gt;vue学习5&lt;/h2&gt;&lt;h3 id=&quot;render函数&quot;&gt;&lt;a href=&quot;#render函数&quot; class=&quot;headerlink&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>vue2学习</title>
