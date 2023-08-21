@@ -7,3 +7,8 @@
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
 }
  */
+/* 搜索小剪刀去掉
+ */
+ .custom-hr:before, .search-dialog hr:before  {
+    display: none;
+ }
