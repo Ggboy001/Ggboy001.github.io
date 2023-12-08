@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg">
 <meta property="article:published_time" content="2023-12-08T08:14:30.000Z">
-<meta property="article:modified_time" content="2023-12-08T08:14:47.045Z">
+<meta property="article:modified_time" content="2023-12-08T08:17:17.203Z">
 <meta property="article:author" content="Sun">
 <meta property="article:tag" content="编程, 感悟, 生活, 前端">
 <meta name="twitter:card" content="summary">
@@ -58,7 +58,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-12-08 16:14:47'
+  postUpdate: '2023-12-08 16:17:17'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -170,15 +170,15 @@
 document.addEventListener('pjax:send', () => {
   Pace.restart()
 })
-</script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="天天开心"><span class="site-name">天天开心</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">nodejs基础+express框架</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-08T08:14:30.000Z" title="发表于 2023-12-08 16:14:30">2023-12-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-08T08:14:47.045Z" title="更新于 2023-12-08 16:14:47">2023-12-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>25分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="nodejs基础+express框架"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="nodejs基础-express框架"><a href="#nodejs基础-express框架" class="headerlink" title="nodejs基础+express框架"></a>nodejs基础+express框架</h1><h4 id="node基础知识思维导图"><a href="#node基础知识思维导图" class="headerlink" title="node基础知识思维导图"></a>node基础知识思维导图</h4><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081611494.png" alt="nodejs"></p>
+</script><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="天天开心"><span class="site-name">天天开心</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">nodejs基础+express框架</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-08T08:14:30.000Z" title="发表于 2023-12-08 16:14:30">2023-12-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-08T08:17:17.203Z" title="更新于 2023-12-08 16:17:17">2023-12-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>25分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="nodejs基础+express框架"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="nodejs基础-express框架"><a href="#nodejs基础-express框架" class="headerlink" title="nodejs基础+express框架"></a>nodejs基础+express框架</h1><h4 id="node基础知识思维导图"><a href="#node基础知识思维导图" class="headerlink" title="node基础知识思维导图"></a>node基础知识思维导图</h4><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081611494.png" alt="nodejs"></p>
 <blockquote>
 <p> 终端小命令</p>
 </blockquote>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231017140815509.png" alt="image-20231017140815509"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606160.png" alt="image-20231017140815509"></p>
 <p>nodejs是不能使用DOM，BOM的api的</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231017141658490.png" alt="image-20231017141658490"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606161.png" alt="image-20231017141658490"></p>
 <p>浏览器中的JavaScript</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231017141730879.png" alt="image-20231017141730879"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606162.png" alt="image-20231017141730879"></p>
 <p>node.js中的顶级对象为global，并非是window。</p>
 <h2 id="Buffer"><a href="#Buffer" class="headerlink" title="Buffer"></a>Buffer</h2><p>1. <strong>概念</strong></p>
 <p>Buffer 是一个类似于数组的 对象 ，用于表示固定长度的字节序列</p>
@@ -280,7 +280,7 @@ document.addEventListener('pjax:send', () => {
 
 <h2 id="工具模块"><a href="#工具模块" class="headerlink" title="工具模块"></a>工具模块</h2><h3 id="path模块"><a href="#path模块" class="headerlink" title="path模块"></a>path模块</h3><p>主要就是和文件路径相关的api</p>
 <p>主要知道第一个就行了</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231018105651456.png" alt="image-20231018105651456"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606163.png" alt="image-20231018105651456"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//就是解决路径拼接不规范的问题</span><br><span class="line">第一个参数是根目录,后面的参数就跟相对路径</span><br><span class="line">path.resolve(__dirname,&#x27;./file.txt&#x27;)</span><br></pre></td></tr></table></figure>
 
 
@@ -290,8 +290,8 @@ document.addEventListener('pjax:send', () => {
 <h2 id="http"><a href="#http" class="headerlink" title="http"></a>http</h2><p>详细的内容可以看看</p>
 <p>04_HTTP协议.pdf</p>
 <p>常用响应状态码</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231018115021134.png" alt="image-20231018115021134"></p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231018115131696.png" alt="image-20231018115131696"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606165.png" alt="image-20231018115021134"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606166.png" alt="image-20231018115131696"></p>
 <p>端口：<br>应用程序的数字标识，主要作用是实现不同主机应用程序之间的通信</p>
 <hr>
 <h3 id="创建http服务"><a href="#创建http服务" class="headerlink" title="创建http服务"></a>创建http服务</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const http = require(&#x27;http&#x27;)</span><br><span class="line">const sever = http.createServer((request, response) =&gt; &#123;</span><br><span class="line">    response.end(&#x27;hello sever&#x27;)</span><br><span class="line">&#125;)</span><br><span class="line">sever.listen(9000, () =&gt; &#123;</span><br><span class="line">    console.log(&#x27;服务启动&#x27;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
@@ -313,7 +313,7 @@ document.addEventListener('pjax:send', () => {
 <h3 id="获取http请求报文"><a href="#获取http请求报文" class="headerlink" title="获取http请求报文"></a>获取http请求报文</h3><p>这是在创建服务时的哪个函数的回调函数中的参数里面的</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const http=require(&#x27;http&#x27;)</span><br><span class="line">const sever=http.createSever((request,response)=&gt;&#123;</span><br><span class="line">//每当网页向这个服务器发送请求,内部就会执行这个函数,并且这两个形参就是有关于请求和响应的对象</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231019103037607.png" alt="image-20231019103037607"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606167.png" alt="image-20231019103037607"></p>
 <p>注意： request.headers 将请求信息转化成一个对象，并将属性名都转化成了『小写』</p>
 <h3 id="url模块"><a href="#url模块" class="headerlink" title="url模块"></a>url模块</h3><p>专门用来解析URL的</p>
 <p>其实也就相当于request.url,只不过额外封装了一些方法属性</p>
@@ -327,12 +327,12 @@ document.addEventListener('pjax:send', () => {
 <p>第一个参数放request.url</p>
 <p>第二个参数放域名&#x2F;ip字符串</p>
 <p>searchParams参数之后碰到问题再说吧</p>
-<h3 id="设置响应报文"><a href="#设置响应报文" class="headerlink" title="设置响应报文"></a>设置响应报文</h3><p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231019105639568.png" alt="image-20231019105639568"></p>
+<h3 id="设置响应报文"><a href="#设置响应报文" class="headerlink" title="设置响应报文"></a>设置响应报文</h3><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606168.png" alt="image-20231019105639568"></p>
 <p>前面的fs文件系统模块已经可以和这里有联系了，将写的html文件用fs读取文件到响应体end中</p>
 <h3 id="网页中的URL"><a href="#网页中的URL" class="headerlink" title="网页中的URL"></a>网页中的URL</h3><p>相对路径和绝对路径</p>
 <p>一句话：但凡涉及到路径的，&#x2F;开头的和完整路径都是绝对路径，绝对路径的拼接就是与协议主机名端口的拼接。</p>
 <p>其余都是相对路径。</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231019144258995.png" alt="image-20231019144258995"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606169.png" alt="image-20231019144258995"></p>
 <p>项目中主要用绝对路径</p>
 <h3 id="MIME类型"><a href="#MIME类型" class="headerlink" title="MIME类型"></a>MIME类型</h3><p>可以通过设置响应头的Content-Type来表明响应体的MIME类型，浏览器会根据这个类型来处理得到的 资源</p>
 <p>常见的</p>
@@ -342,7 +342,7 @@ document.addEventListener('pjax:send', () => {
 <p>就是用response.setHeader(‘content-type’,’text&#x2F;css;charset&#x3D;utf-8’)</p>
 <h3 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h3><p>node经常会需要输出本来就有的err错误,可以在node api文档中查找error错误那里找到.</p>
 <h3 id="get和post请求场景"><a href="#get和post请求场景" class="headerlink" title="get和post请求场景"></a>get和post请求场景</h3><p>小知识：下面的引入css文件，只要知道具体的文件地址就可以引入到项目中</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231019151435886.png" alt="image-20231019151435886"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606170.png" alt="image-20231019151435886"></p>
 <p>先稍微中断一下，学了三四天，当时学完之后感觉非常通透，但过了还不到3天，其实挺多内容都已经忘了，我估计现在都已经遗忘80%了。</p>
 <h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><h3 id="模块暴露数据的两种方式："><a href="#模块暴露数据的两种方式：" class="headerlink" title="模块暴露数据的两种方式："></a>模块暴露数据的两种方式：</h3><ul>
 <li>module.exports&#x3D;value</li>
@@ -368,7 +368,7 @@ document.addEventListener('pjax:send', () => {
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(11);//这行代码导入模块的文件不需要</span><br><span class="line">module.exports = &quot;tesst&quot;//导入模块的文件只要这个</span><br></pre></td></tr></table></figure>
 
 <p>好处:就是一个项目中引用相同模块时,只缓存一次,就可以多个文件导入,不需要牛牛后面的工序了</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231021203456795.png" alt="image-20231021203456795"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606171.png" alt="image-20231021203456795"></p>
 <h2 id="包管理工具"><a href="#包管理工具" class="headerlink" title="包管理工具"></a>包管理工具</h2><p>包：<br>一组特定功能的源码集合</p>
 <p>包管理工具：</p>
 <p>包管理工具是一个通用的概念，很多编程语言都有包管理工具，所以 掌握好包管理工具非常重要</p>
@@ -388,7 +388,7 @@ document.addEventListener('pjax:send', () => {
 <p>需要注意一下cmd是不是管理员。</p>
 <h3 id="npm配置命令别名"><a href="#npm配置命令别名" class="headerlink" title="npm配置命令别名"></a>npm配置命令别名</h3><p>通过配置命令别名可以更简单的执行命令 </p>
 <p>配置 package.json 中的 scripts 属性</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231022124622724.png" alt="image-20231022124622724"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606172.png" alt="image-20231022124622724"></p>
 <p>补充说明：</p>
 <ul>
 <li>npm start 是项目中常用的一个命令，一般用来启动项目 </li>
@@ -400,14 +400,14 @@ document.addEventListener('pjax:send', () => {
 <p>镜像服务器</p>
 <p>镜像服务器与主服务器的服务内容都是一样的，只是放在一个不同的地方</p>
 <p>npm配置淘宝镜像</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231022131528311.png" alt="image-20231022131528311"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606173.png" alt="image-20231022131528311"></p>
 <h3 id="yarn"><a href="#yarn" class="headerlink" title="yarn"></a>yarn</h3><p>yarn 是由 Facebook 在 2016 年推出的新的 Javascript 包管理工具</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231022133835620.png" alt="image-20231022133835620"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606174.png" alt="image-20231022133835620"></p>
 <h3 id="npm支持你去发布一个包"><a href="#npm支持你去发布一个包" class="headerlink" title="npm支持你去发布一个包"></a>npm支持你去发布一个包</h3><p>这样别人就可以直接下载包使用了</p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gM411W7ex?p=91&vd_source=787dbb8c92d34b12fcdedf7a3334bf09">091_包管理工具_npm发布一个包_哔哩哔哩_bilibili</a></p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231022134743883.png" alt="image-20231022134743883"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606175.png" alt="image-20231022134743883"></p>
 <h3 id="牛逼的小技巧："><a href="#牛逼的小技巧：" class="headerlink" title="牛逼的小技巧："></a>牛逼的小技巧：</h3><p>不同的编程语言或操作系统都有包管理工具，很好用的。</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231022134807066.png" alt="image-20231022134807066"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606176.png" alt="image-20231022134807066"></p>
 <p>linux安装应用程序通常只需要一行命令即可，chaocolatey就是这样的。通过一行命令即可安装应用程序</p>
 <p>之后再涉及到各个语言或操作系统包管理工具的相关指令就不会觉得难了，无非就是一些需要记忆的指令和参数罢了</p>
 <h2 id="express框架"><a href="#express框架" class="headerlink" title="express框架"></a>express框架</h2><p>简单来说，express 是一个封装好的工具包，封装了很多功能，便于我们开发 WEB 应用（HTTP 服务）</p>
@@ -422,15 +422,15 @@ document.addEventListener('pjax:send', () => {
 
 <p>小知识：手机和电脑连接再同一局域网下。</p>
 <p>电脑开启node服务器</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231023102757277.png" alt="image-20231023102757277"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606177.png" alt="image-20231023102757277"></p>
 <p>手机可以去访问上面的ipv4地址</p>
 <h3 id="获取请求参数"><a href="#获取请求参数" class="headerlink" title="获取请求参数"></a>获取请求参数</h3><p>还是req参数上的一些属性</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231023104243183.png" alt="image-20231023104243183"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606178.png" alt="image-20231023104243183"></p>
 <h3 id="获取路由参数"><a href="#获取路由参数" class="headerlink" title="获取路由参数"></a>获取路由参数</h3><p>就是有时候路由当中有些有规则的字符串可以用一个参数来获取这个参数。</p>
 <p>就不用每一个都获取然后返回响应体了。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">app.get(&#x27;/:id.html&#x27;, (req, res) =&gt; &#123;</span><br><span class="line">res.send(&#x27;商品详情, 商品 id 为&#x27; + req.params.id);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h3 id="设置响应报文-1"><a href="#设置响应报文-1" class="headerlink" title="设置响应报文"></a>设置响应报文</h3><p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231023111754994.png" alt="image-20231023111754994"></p>
+<h3 id="设置响应报文-1"><a href="#设置响应报文-1" class="headerlink" title="设置响应报文"></a>设置响应报文</h3><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606179.png" alt="image-20231023111754994"></p>
 <p>send设置响应体</p>
 <p>可以连贯操作设置响应</p>
 <p>其他响应页挺有用的</p>
@@ -504,7 +504,7 @@ document.addEventListener('pjax:send', () => {
 <h3 id="案例我会做的"><a href="#案例我会做的" class="headerlink" title="案例我会做的"></a>案例我会做的</h3><p>不准备学习过多的细节</p>
 <p>就先了解后端开发的流程，讲究一个快。</p>
 <h2 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h2><p>管理数据的数据库</p>
-<h3 id="三个核心概念"><a href="#三个核心概念" class="headerlink" title="三个核心概念"></a>三个核心概念</h3><p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231024194630081.png" alt="image-20231024194630081"></p>
+<h3 id="三个核心概念"><a href="#三个核心概念" class="headerlink" title="三个核心概念"></a>三个核心概念</h3><p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606180.png" alt="image-20231024194630081"></p>
 <p>Mongoose</p>
 <p>Mongoose 是一个对象文档模型库</p>
 <p>不过就是一个包，用他的api实现对mongodb数据库的数据的操作</p>
@@ -562,7 +562,7 @@ document.addEventListener('pjax:send', () => {
 <p>也很简单</p>
 <p>标记删除</p>
 <p>一般不把数据从数据表中真正删除,而是通过一个字段来标记这个记录是否被删除,防止用户误操作还想要恢复.</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231026150614510.png" alt="image-20231026150614510"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606181.png" alt="image-20231026150614510"></p>
 <h4 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">使用占位符进行值查询</span><br><span class="line">let str = &#x27;select * from reader where id=? and name=?&#x27;</span><br><span class="line">db.query(str, [&#x27;r1&#x27;, &#x27;2&#x27;], (err, result) =&gt; &#123;</span><br><span class="line">    if (err)</span><br><span class="line">        console.log(err.message);</span><br><span class="line">    console.log(result);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 <p>上面的result只有查询时会是一个数组,其余操作均是对象.</p>
@@ -580,7 +580,7 @@ document.addEventListener('pjax:send', () => {
 <p>接口地址</p>
 <p>请求参数</p>
 <p>响应结果</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231026162819443.png" alt="image-20231026162819443"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606182.png" alt="image-20231026162819443"></p>
 <p>RESTful API</p>
 <p>主要特点:</p>
 <ol>
@@ -589,8 +589,8 @@ document.addEventListener('pjax:send', () => {
 <li>操作结果要与Http响应状态码对应</li>
 </ol>
 <p>综合运用,Get,Post,Delete,Put这几种方法来对应增删改查</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231030154946061.png" alt="image-20231030154946061"></p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231030155622178.png" alt="image-20231030155622178"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606183.png" alt="image-20231030154946061"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606184.png" alt="image-20231030155622178"></p>
 <p>API</p>
 <p>就是通过响应json格式来给前端调用接口</p>
 <p>其实这个时候不就已经可以实现前后端结合了吗</p>
@@ -608,7 +608,7 @@ document.addEventListener('pjax:send', () => {
 <p>这个请求头的名字也叫 cookie ，所以将 cookie 理解为一个 HTTP 的请求头也是可以的</p>
 <p>但是cookie是可以伪造的，不安全。</p>
 <h3 id="session"><a href="#session" class="headerlink" title="session"></a>session</h3><p>是保存在服务器端的一块数据，保存当前访问的用户的相关信息</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231031130601960.png" alt="image-20231031130601960"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606185.png" alt="image-20231031130601960"></p>
 <p>本质：在登录账号和密码之后，服务器创建session信息，一个session-id的值通过响应头返回给浏览器，</p>
 <p>然后浏览器端就有了这个id信息，并把它作为cookie，每次发请求都带着这个cookie来验证用户的身份。一把锁配一把钥匙。</p>
 <p>当然这也是可以盗取cookie的，但是服务器端就可以摧毁session，算是加了一层保障</p>
@@ -619,8 +619,8 @@ document.addEventListener('pjax:send', () => {
 <h3 id="JWT"><a href="#JWT" class="headerlink" title="JWT"></a>JWT</h3><p>基本思路：</p>
 <p>就是把后端生成的token给前端保存在localstorage中，然后发请求的时候带着token</p>
 <p>后端拿到的token就是什么header+和后端设置的密钥拼合后进行加密</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231031153125684.png" alt="image-20231031153125684"></p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231031153200823.png" alt="image-20231031153200823"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606186.png" alt="image-20231031153125684"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606187.png" alt="image-20231031153200823"></p>
 <p>还是利用包，jsonwebtoken</p>
 <p>来生成token，解析token看是否过期</p>
 <h2 id="业务分层"><a href="#业务分层" class="headerlink" title="业务分层"></a>业务分层</h2><p>MVC(model-view-controller)</p>
@@ -628,7 +628,7 @@ document.addEventListener('pjax:send', () => {
 <p>controller.js:C层负责处理业务逻辑(V与M的沟通)</p>
 <p>view:V层负责展示页面</p>
 <p>model:M层负责处理数据(增删改查)</p>
-<p><img src="C:\Users\sun\AppData\Roaming\Typora\typora-user-images\image-20231030163045380.png" alt="image-20231030163045380"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Ggboy001/images/img/202312081606188.png" alt="image-20231030163045380"></p>
 <p>routes—controllers—services文件夹</p>
 <p>用对象的属性对应方法来进行模块之间的连结</p>
 <h3 id="文件上传-1"><a href="#文件上传-1" class="headerlink" title="文件上传"></a>文件上传</h3><p>前端提交文件，就是要拿到这个文件的信息对象信息，放入一个表单对象中（FormData对象），然后发送axios提交的时候需要设置header中的Content-type为mulpart&#x2F;form-data</p>
