@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ggboy001.github.io/2023/12/08/nodejs%E5%9F%BA%E7%A1%80-express%E6%A1%86%E6%9E%B6/</loc>
+    
+    <lastmod>2023-12-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://ggboy001.github.io/2023/12/08/vue3%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/</loc>
     
     <lastmod>2023-12-08</lastmod>
